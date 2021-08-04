@@ -1,0 +1,107 @@
+<h1>Hello {{$ctrl.name}}!</h1>
+<p>
+  Start editing <b>home/home.html</b> :)
+</p>
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #51515d;
+  color: white;
+  font-size: 30px;
+  margin-left:45px;
+  margin-right:45px;
+  border-radius: 10px;
+}
+.css_1 {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 45px;
+}
+.col100 {
+	width: 100%;
+}
+.col50 {
+	width: 50%;
+	padding:10px;
+}
+.phead{
+	font-size: 20px;
+	font-weight: bold;
+}
+</style>
+<body>
+<div class="header">
+	<h3>Tax-o-tron</h3>
+</div>
+<div class="css_1">
+	<table class="col100">
+		<tr>
+			<td class="col50">
+				<img src="calc.jpg" width="100%" height="auto" style="border-radius: 30px;">
+			</td>
+			<td class="col50">
+				<div>
+				  <p class="phead">Calculate your Tax</p>
+				  <form action="/action_page.php">
+					<label for="country">Select your Country of Residence*</label>
+					<select id="country" name="country">
+					  <option value="australia">Australia</option>
+					  <option value="canada">Canada</option>
+					  <option value="usa">USA</option>
+					</select>
+					<label for="fname">Select your</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="country">Country</label>
+					<select id="country" name="country">
+					  <option value="australia">Australia</option>
+					  <option value="canada">Canada</option>
+					  <option value="usa">USA</option>
+					</select>
+				  
+					<input type="submit" value="Submit">
+				  </form>
+				</div>
+			<td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
